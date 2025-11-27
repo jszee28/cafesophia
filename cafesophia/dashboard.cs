@@ -69,5 +69,10 @@ namespace cafesophia
         {
             LoadForm(new processsale());
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -56,7 +56,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(364, 882);
+            this.guna2Panel1.Size = new System.Drawing.Size(410, 1102);
             this.guna2Panel1.TabIndex = 12;
             // 
             // btnprocess
@@ -74,10 +74,10 @@
             this.btnprocess.Image = ((System.Drawing.Image)(resources.GetObject("btnprocess.Image")));
             this.btnprocess.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnprocess.ImageSize = new System.Drawing.Size(50, 50);
-            this.btnprocess.Location = new System.Drawing.Point(0, 392);
+            this.btnprocess.Location = new System.Drawing.Point(0, 490);
             this.btnprocess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnprocess.Name = "btnprocess";
-            this.btnprocess.Size = new System.Drawing.Size(356, 71);
+            this.btnprocess.Size = new System.Drawing.Size(400, 89);
             this.btnprocess.TabIndex = 60;
             this.btnprocess.Text = "Sale";
             this.btnprocess.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -96,11 +96,11 @@
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnLogout.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnLogout.Location = new System.Drawing.Point(5, 752);
+            this.btnLogout.Location = new System.Drawing.Point(6, 940);
             this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.PressedColor = System.Drawing.Color.DimGray;
-            this.btnLogout.Size = new System.Drawing.Size(356, 71);
+            this.btnLogout.Size = new System.Drawing.Size(400, 89);
             this.btnLogout.TabIndex = 59;
             this.btnLogout.Text = "Log out";
             this.btnLogout.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -119,10 +119,10 @@
             this.btnhistory.Image = ((System.Drawing.Image)(resources.GetObject("btnhistory.Image")));
             this.btnhistory.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnhistory.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnhistory.Location = new System.Drawing.Point(5, 617);
+            this.btnhistory.Location = new System.Drawing.Point(6, 771);
             this.btnhistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnhistory.Name = "btnhistory";
-            this.btnhistory.Size = new System.Drawing.Size(356, 71);
+            this.btnhistory.Size = new System.Drawing.Size(400, 89);
             this.btnhistory.TabIndex = 6;
             this.btnhistory.Text = "History";
             this.btnhistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -132,11 +132,11 @@
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(68, 43);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(76, 54);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(224, 218);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(252, 272);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 5;
             this.guna2CirclePictureBox1.TabStop = false;
@@ -156,10 +156,10 @@
             this.btnaddnew.Image = ((System.Drawing.Image)(resources.GetObject("btnaddnew.Image")));
             this.btnaddnew.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnaddnew.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnaddnew.Location = new System.Drawing.Point(5, 467);
+            this.btnaddnew.Location = new System.Drawing.Point(6, 584);
             this.btnaddnew.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnaddnew.Name = "btnaddnew";
-            this.btnaddnew.Size = new System.Drawing.Size(356, 71);
+            this.btnaddnew.Size = new System.Drawing.Size(400, 89);
             this.btnaddnew.TabIndex = 4;
             this.btnaddnew.Text = "Inventory";
             this.btnaddnew.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -178,10 +178,10 @@
             this.btnreport.Image = ((System.Drawing.Image)(resources.GetObject("btnreport.Image")));
             this.btnreport.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnreport.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnreport.Location = new System.Drawing.Point(4, 542);
+            this.btnreport.Location = new System.Drawing.Point(4, 678);
             this.btnreport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnreport.Name = "btnreport";
-            this.btnreport.Size = new System.Drawing.Size(356, 71);
+            this.btnreport.Size = new System.Drawing.Size(400, 89);
             this.btnreport.TabIndex = 2;
             this.btnreport.Text = "Report Form";
             this.btnreport.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -200,10 +200,10 @@
             this.btnmanagement.Image = ((System.Drawing.Image)(resources.GetObject("btnmanagement.Image")));
             this.btnmanagement.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnmanagement.ImageSize = new System.Drawing.Size(40, 40);
-            this.btnmanagement.Location = new System.Drawing.Point(4, 677);
+            this.btnmanagement.Location = new System.Drawing.Point(4, 846);
             this.btnmanagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnmanagement.Name = "btnmanagement";
-            this.btnmanagement.Size = new System.Drawing.Size(356, 71);
+            this.btnmanagement.Size = new System.Drawing.Size(400, 89);
             this.btnmanagement.TabIndex = 3;
             this.btnmanagement.Text = "Management Form";
             this.btnmanagement.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -213,17 +213,18 @@
             // 
             this.panelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(245)))), ((int)(((byte)(248)))));
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(364, 0);
+            this.panelMain.Location = new System.Drawing.Point(410, 0);
             this.panelMain.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1362, 882);
+            this.panelMain.Size = new System.Drawing.Size(1532, 1102);
             this.panelMain.TabIndex = 13;
+            this.panelMain.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMain_Paint);
             // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1726, 882);
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.ControlBox = false;
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.guna2Panel1);
