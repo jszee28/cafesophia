@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtCostPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSellingPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,12 +66,12 @@
             this.txtCostPrice.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCostPrice.ForeColor = System.Drawing.Color.Black;
             this.txtCostPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCostPrice.Location = new System.Drawing.Point(735, 153);
+            this.txtCostPrice.Location = new System.Drawing.Point(911, 151);
             this.txtCostPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtCostPrice.Name = "txtCostPrice";
             this.txtCostPrice.PlaceholderText = "";
             this.txtCostPrice.SelectedText = "";
-            this.txtCostPrice.Size = new System.Drawing.Size(237, 36);
+            this.txtCostPrice.Size = new System.Drawing.Size(320, 36);
             this.txtCostPrice.TabIndex = 6;
             // 
             // txtSellingPrice
@@ -87,19 +87,19 @@
             this.txtSellingPrice.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSellingPrice.ForeColor = System.Drawing.Color.Black;
             this.txtSellingPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSellingPrice.Location = new System.Drawing.Point(735, 95);
+            this.txtSellingPrice.Location = new System.Drawing.Point(911, 93);
             this.txtSellingPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtSellingPrice.Name = "txtSellingPrice";
             this.txtSellingPrice.PlaceholderText = "";
             this.txtSellingPrice.SelectedText = "";
-            this.txtSellingPrice.Size = new System.Drawing.Size(237, 36);
+            this.txtSellingPrice.Size = new System.Drawing.Size(320, 36);
             this.txtSellingPrice.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(549, 102);
+            this.label7.Location = new System.Drawing.Point(725, 100);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 27);
             this.label7.TabIndex = 45;
@@ -130,7 +130,7 @@
             this.cmbItemType.Location = new System.Drawing.Point(246, 93);
             this.cmbItemType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbItemType.Name = "cmbItemType";
-            this.cmbItemType.Size = new System.Drawing.Size(237, 36);
+            this.cmbItemType.Size = new System.Drawing.Size(370, 36);
             this.cmbItemType.TabIndex = 0;
             // 
             // label4
@@ -147,7 +147,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(573, 162);
+            this.label3.Location = new System.Drawing.Point(749, 160);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(130, 27);
             this.label3.TabIndex = 42;
@@ -194,7 +194,7 @@
             this.cmbUnit.Location = new System.Drawing.Point(246, 384);
             this.cmbUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUnit.Name = "cmbUnit";
-            this.cmbUnit.Size = new System.Drawing.Size(237, 36);
+            this.cmbUnit.Size = new System.Drawing.Size(370, 36);
             this.cmbUnit.TabIndex = 3;
             // 
             // txtLowStock
@@ -215,7 +215,7 @@
             this.txtLowStock.Name = "txtLowStock";
             this.txtLowStock.PlaceholderText = "";
             this.txtLowStock.SelectedText = "";
-            this.txtLowStock.Size = new System.Drawing.Size(237, 41);
+            this.txtLowStock.Size = new System.Drawing.Size(370, 41);
             this.txtLowStock.TabIndex = 2;
             // 
             // txtItemName
@@ -236,7 +236,7 @@
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.PlaceholderText = "";
             this.txtItemName.SelectedText = "";
-            this.txtItemName.Size = new System.Drawing.Size(237, 41);
+            this.txtItemName.Size = new System.Drawing.Size(370, 41);
             this.txtItemName.TabIndex = 1;
             // 
             // guna2Panel5
@@ -247,7 +247,7 @@
             this.guna2Panel5.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(1560, 59);
+            this.guna2Panel5.Size = new System.Drawing.Size(1693, 59);
             this.guna2Panel5.TabIndex = 48;
             // 
             // label5
@@ -312,14 +312,14 @@
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 7.8F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 7.8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowHeadersWidth = 62;
             this.dgvInventory.RowTemplate.Height = 28;
@@ -330,7 +330,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(617, 190);
+            this.label8.Location = new System.Drawing.Point(767, 199);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 54;
@@ -353,7 +353,7 @@
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.PlaceholderText = "";
             this.txtquantity.SelectedText = "";
-            this.txtquantity.Size = new System.Drawing.Size(237, 39);
+            this.txtquantity.Size = new System.Drawing.Size(370, 39);
             this.txtquantity.TabIndex = 4;
             // 
             // label9
@@ -374,7 +374,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(248)))), ((int)(((byte)(231)))));
             this.CancelButton = this.btnclear;
-            this.ClientSize = new System.Drawing.Size(1560, 867);
+            this.ClientSize = new System.Drawing.Size(1693, 867);
             this.ControlBox = false;
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtquantity);
