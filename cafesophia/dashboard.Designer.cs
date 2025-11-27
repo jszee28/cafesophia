@@ -122,7 +122,7 @@
             this.btnhistory.Location = new System.Drawing.Point(0, 617);
             this.btnhistory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnhistory.Name = "btnhistory";
-            this.btnhistory.Size = new System.Drawing.Size(361, 71);
+            this.btnhistory.Size = new System.Drawing.Size(364, 71);
             this.btnhistory.TabIndex = 6;
             this.btnhistory.Text = "History";
             this.btnhistory.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -203,7 +203,7 @@
             this.btnmanagement.Location = new System.Drawing.Point(0, 677);
             this.btnmanagement.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnmanagement.Name = "btnmanagement";
-            this.btnmanagement.Size = new System.Drawing.Size(361, 71);
+            this.btnmanagement.Size = new System.Drawing.Size(364, 71);
             this.btnmanagement.TabIndex = 3;
             this.btnmanagement.Text = "Management Form";
             this.btnmanagement.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
