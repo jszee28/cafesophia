@@ -77,5 +77,20 @@ namespace cafesophia
         {
             Environment.Exit(0);
                 }
+
+        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = false;
+        }
+
+        private void label5_DoubleClick(object sender, EventArgs e)
+        {
+            txtPassword.UseSystemPasswordChar = true;
+        }
     }
 }
