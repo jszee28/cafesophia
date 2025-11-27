@@ -85,7 +85,7 @@
             this.btnLogin.FillColor = System.Drawing.Color.Tan;
             this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnLogin.ForeColor = System.Drawing.Color.SeaShell;
-            this.btnLogin.Location = new System.Drawing.Point(234, 426);
+            this.btnLogin.Location = new System.Drawing.Point(242, 426);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(461, 63);
@@ -98,18 +98,18 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
-            this.label2.Location = new System.Drawing.Point(324, 25);
+            this.label2.Location = new System.Drawing.Point(165, 62);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(323, 118);
+            this.label2.Size = new System.Drawing.Size(630, 59);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Welcome to\r\nSophia Café";
+            this.label2.Text = "Welcome to Sophia Café";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
-            this.label3.Location = new System.Drawing.Point(261, 157);
+            this.label3.Location = new System.Drawing.Point(269, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(434, 34);
             this.label3.TabIndex = 12;
@@ -128,7 +128,7 @@
             this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtUsername.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(39)))), ((int)(((byte)(35)))));
             this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUsername.Location = new System.Drawing.Point(242, 215);
@@ -153,7 +153,7 @@
             this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.Location = new System.Drawing.Point(242, 300);
@@ -174,7 +174,7 @@
             this.cbshowpass.CheckedState.FillColor = System.Drawing.Color.White;
             this.cbshowpass.CheckMarkColor = System.Drawing.Color.Black;
             this.cbshowpass.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbshowpass.Location = new System.Drawing.Point(246, 381);
+            this.cbshowpass.Location = new System.Drawing.Point(375, 381);
             this.cbshowpass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbshowpass.Name = "cbshowpass";
             this.cbshowpass.Size = new System.Drawing.Size(29, 28);
@@ -294,7 +294,7 @@
             this.label5.AutoSize = true;
             this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(274, 383);
+            this.label5.Location = new System.Drawing.Point(403, 383);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(182, 23);
             this.label5.TabIndex = 13;
