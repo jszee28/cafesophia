@@ -37,11 +37,26 @@ namespace cafesophia
 
         private void btnaddnew_Click(object sender, EventArgs e)
         {
+            btnaddnew.BackColor = Color.FromArgb(240, 245, 248);
+            btnaddnew.ForeColor = Color.Black;
+
+            btnreport.BackColor = Color.FromArgb(107, 62, 38);
+            btnreport.ForeColor = Color.White;
+
+            btnhistory.BackColor = Color.FromArgb(107, 62, 38);
+            btnhistory.ForeColor = Color.White;
+
+            btnmanagement.BackColor = Color.FromArgb(107, 62, 38);
+            btnmanagement.ForeColor = Color.White;
+
+            btnprocess.BackColor = Color.FromArgb(107, 62, 38);
+            btnprocess.ForeColor = Color.White;
             LoadForm(new addnew());
         }
 
         private void btnsale_Click(object sender, EventArgs e)
         { // click Event Active color
+
             btnaddnew.BackColor = Color.FromArgb(240, 245, 248);
             btnaddnew.ForeColor = Color.Black;
 
