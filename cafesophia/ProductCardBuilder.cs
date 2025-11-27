@@ -13,6 +13,7 @@ namespace cafesophia
         /// </summary>
         public static Panel CreateCard(int itemId, string name, decimal price, int stock, string imagePath, Action<int, string, decimal, int> onClick)
         {
+            // Item Sale
             var card = new Panel
             {
                 Size = new Size(120, 150),
@@ -23,7 +24,7 @@ namespace cafesophia
                 Tag = new { itemId, name, price, stock }
             };
             // Check
-            card.MouseEnter += (s, e) => card.BackColor = Color.FromArgb(0,0,0);
+            card.MouseEnter += (s, e) => card.BackColor = Color.FromArgb(245, 238, 232);
             card.MouseLeave += (s, e) => card.BackColor = Color.White;
 
             var pb = CreatePictureBox(imagePath);
@@ -34,17 +35,19 @@ namespace cafesophia
                 Text = name,
                 Location = new Point(4, 90),
                 Size = new Size(112, 32),
-                Font = new Font("Segoe UI", 8),
+                // Text
+                Font = new Font("Century Gothic", 8),
                 AutoEllipsis = true
             };
             card.Controls.Add(lblName);
-
+            
             var lblPrice = new Label
             {
                 Text = string.Format("₱{0:N2}", price),
                 Location = new Point(4, 120),
                 Size = new Size(112, 24),
-                Font = new Font("Segoe UI", 9, FontStyle.Bold),
+                // Text
+                Font = new Font("Century Gothic", 9, FontStyle.Bold),
                 ForeColor = Color.Green
             };
             card.Controls.Add(lblPrice);
@@ -58,7 +61,9 @@ namespace cafesophia
 
             return card;
         }
+        // END CreateCard
 
+        // Default Set Cards
         private static PictureBox CreatePictureBox(string imagePath)
         {
             var pb = new PictureBox
@@ -161,14 +166,14 @@ namespace cafesophia
 
             return pb;
         }
-
+        // Card Placeholder
         private static Bitmap CreatePlaceholder(int w, int h)
         {
             var bmp = new Bitmap(w, h);
             using (var g = Graphics.FromImage(bmp))
             {
                 g.Clear(Color.LightGray);
-                using (var f = new Font("Segoe UI", 7))
+                using (var f = new Font("Century Gothic", 7))
                 using (var b = new SolidBrush(Color.DimGray))
                 {
                     var sf = new StringFormat { Alignment = StringAlignment.Center, LineAlignment = StringAlignment.Center };
