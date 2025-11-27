@@ -67,7 +67,11 @@ namespace cafesophia
 
         private void btnprocess_Click(object sender, EventArgs e)
         {
+            btnprocess.BackColor = Color.FromArgb(245, 238, 232);
+            btnprocess.BackColor = Color.White;
+
             LoadForm(new processsale());
+
         }
 
         private void panelMain_Paint(object sender, PaintEventArgs e)

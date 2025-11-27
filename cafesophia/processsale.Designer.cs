@@ -104,6 +104,7 @@
             // cmbordertype
             // 
             this.cmbordertype.BackColor = System.Drawing.Color.Transparent;
+            this.cmbordertype.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cmbordertype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbordertype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbordertype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -114,7 +115,7 @@
             this.cmbordertype.Items.AddRange(new object[] {
             "Take Out",
             "Dine In"});
-            this.cmbordertype.Location = new System.Drawing.Point(178, 591);
+            this.cmbordertype.Location = new System.Drawing.Point(178, 592);
             this.cmbordertype.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbordertype.Name = "cmbordertype";
             this.cmbordertype.Size = new System.Drawing.Size(244, 36);

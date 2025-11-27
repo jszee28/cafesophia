@@ -62,7 +62,7 @@
             // btnprocess
             // 
             this.btnprocess.BackColor = System.Drawing.Color.Transparent;
-            this.btnprocess.BorderColor = System.Drawing.Color.Transparent;
+            this.btnprocess.BorderColor = System.Drawing.Color.SpringGreen;
             this.btnprocess.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnprocess.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnprocess.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -77,7 +77,7 @@
             this.btnprocess.Location = new System.Drawing.Point(0, 392);
             this.btnprocess.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnprocess.Name = "btnprocess";
-            this.btnprocess.Size = new System.Drawing.Size(356, 71);
+            this.btnprocess.Size = new System.Drawing.Size(364, 71);
             this.btnprocess.TabIndex = 60;
             this.btnprocess.Text = "Sale";
             this.btnprocess.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -132,11 +132,11 @@
             // 
             this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
             this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(68, 43);
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(21, 11);
             this.guna2CirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
             this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(224, 218);
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(318, 299);
             this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2CirclePictureBox1.TabIndex = 5;
             this.guna2CirclePictureBox1.TabStop = false;
