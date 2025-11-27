@@ -34,6 +34,7 @@
             this.txtSearchSale = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnRefreshHistory = new Guna.UI2.WinForms.Guna2Button();
             this.lblHistoryStatus = new System.Windows.Forms.Label();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -112,7 +113,7 @@
             this.btnRefreshHistory.Name = "btnRefreshHistory";
             this.btnRefreshHistory.Size = new System.Drawing.Size(203, 60);
             this.btnRefreshHistory.TabIndex = 84;
-            this.btnRefreshHistory.Text = "\\";
+            this.btnRefreshHistory.Text = "Refresh";
             // 
             // lblHistoryStatus
             // 
@@ -125,6 +126,19 @@
             this.lblHistoryStatus.Text = "Status :";
             this.lblHistoryStatus.Click += new System.EventHandler(this.lblHistoryStatus_Click);
             // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(520, 122);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 36);
+            this.guna2DateTimePicker1.TabIndex = 88;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2025, 11, 27, 23, 52, 1, 114);
+            // 
             // history
             // 
             this.AcceptButton = this.btnRefreshHistory;
@@ -133,6 +147,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(248)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1755, 1444);
             this.ControlBox = false;
+            this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.lblHistoryStatus);
             this.Controls.Add(this.btnRefreshHistory);
             this.Controls.Add(this.txtSearchSale);
@@ -155,5 +170,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearchSale;
         private Guna.UI2.WinForms.Guna2Button btnRefreshHistory;
         private System.Windows.Forms.Label lblHistoryStatus;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
     }
 }

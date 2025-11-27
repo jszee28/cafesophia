@@ -10,5 +10,8 @@ namespace cafesophia
         public decimal AmountPaid { get; set; }
         public decimal Change { get; set; }
         public DateTime Date { get; set; }
+
+        // New: include order type/service type so receipts can show it
+        public string OrderType { get; set; }
     }
 }

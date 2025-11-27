@@ -46,6 +46,13 @@ namespace cafesophia
             {
                 DrawCenteredText(g, "SOPHIA'S CAFE", bold, e.PageBounds, ref y);
                 DrawCenteredText(g, _data.Date.ToString("yyyy-MM-dd HH:mm:ss"), font, e.PageBounds, ref y);
+
+                // New: print Order Type / Service Type on receipt
+                var orderTypeText = string.IsNullOrWhiteSpace(_data.OrderType) ? "Order Type: N/A" : $"Order Type: {_data.OrderType}";
+                // left align the Order Type so it's visible before the items
+                g.DrawString(orderTypeText, font, Brushes.Black, x, y);
+                y += lineHeight;
+
                 DrawEquals(g, font, x, ref y);
 
                 // header columns

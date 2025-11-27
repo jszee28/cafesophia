@@ -31,6 +31,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtsearchitem = new Guna.UI2.WinForms.Guna2TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblOrderTypelabel = new System.Windows.Forms.Label();
+            this.cmbordertype = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblchange = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtamountpaid = new Guna.UI2.WinForms.Guna2TextBox();
@@ -45,9 +47,9 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Location = new System.Drawing.Point(12, 17);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(849, 1132);
+            this.panel1.Size = new System.Drawing.Size(849, 1393);
             this.panel1.TabIndex = 0;
             // 
             // txtsearchitem
@@ -72,6 +74,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblOrderTypelabel);
+            this.panel2.Controls.Add(this.cmbordertype);
             this.panel2.Controls.Add(this.txtsearchitem);
             this.panel2.Controls.Add(this.lblchange);
             this.panel2.Controls.Add(this.label3);
@@ -84,6 +88,34 @@
             this.panel2.Size = new System.Drawing.Size(683, 1132);
             this.panel2.TabIndex = 1;
             // 
+            // lblOrderTypelabel
+            // 
+            this.lblOrderTypelabel.AutoSize = true;
+            this.lblOrderTypelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblOrderTypelabel.Location = new System.Drawing.Point(14, 911);
+            this.lblOrderTypelabel.Name = "lblOrderTypelabel";
+            this.lblOrderTypelabel.Size = new System.Drawing.Size(191, 32);
+            this.lblOrderTypelabel.TabIndex = 12;
+            this.lblOrderTypelabel.Text = "Service Type";
+            // 
+            // cmbordertype
+            // 
+            this.cmbordertype.BackColor = System.Drawing.Color.Transparent;
+            this.cmbordertype.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbordertype.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbordertype.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbordertype.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbordertype.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbordertype.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbordertype.ItemHeight = 30;
+            this.cmbordertype.Items.AddRange(new object[] {
+            "Take Out",
+            "Dine In"});
+            this.cmbordertype.Location = new System.Drawing.Point(438, 907);
+            this.cmbordertype.Name = "cmbordertype";
+            this.cmbordertype.Size = new System.Drawing.Size(232, 36);
+            this.cmbordertype.TabIndex = 11;
+            // 
             // lblchange
             // 
             this.lblchange.AutoSize = true;
@@ -93,7 +125,6 @@
             this.lblchange.Size = new System.Drawing.Size(134, 32);
             this.lblchange.TabIndex = 10;
             this.lblchange.Text = "(change)";
-            this.lblchange.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -164,11 +195,12 @@
             this.btncancel.FillColor = System.Drawing.Color.Transparent;
             this.btncancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncancel.ForeColor = System.Drawing.Color.Red;
-            this.btncancel.Location = new System.Drawing.Point(79, 1189);
+            this.btncancel.Location = new System.Drawing.Point(1039, 1195);
             this.btncancel.Name = "btncancel";
             this.btncancel.Size = new System.Drawing.Size(198, 86);
             this.btncancel.TabIndex = 3;
             this.btncancel.Text = "Cancel Order";
+      
             // 
             // btnbayad
             // 
@@ -179,7 +211,7 @@
             this.btnbayad.FillColor = System.Drawing.Color.Lime;
             this.btnbayad.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbayad.ForeColor = System.Drawing.Color.Black;
-            this.btnbayad.Location = new System.Drawing.Point(340, 1189);
+            this.btnbayad.Location = new System.Drawing.Point(1340, 1195);
             this.btnbayad.Name = "btnbayad";
             this.btnbayad.Size = new System.Drawing.Size(215, 86);
             this.btnbayad.TabIndex = 5;
@@ -220,5 +252,7 @@
         private System.Windows.Forms.Label lblchange;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button btnbayad;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbordertype;
+        private System.Windows.Forms.Label lblOrderTypelabel;
     }
 }

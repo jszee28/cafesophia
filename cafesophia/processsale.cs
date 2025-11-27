@@ -14,7 +14,6 @@ namespace cafesophia
     {
         private readonly CartManager _cartManager = new CartManager();
         private static readonly List<List<CartItem>> _heldOrders = new List<List<CartItem>>();
-
         private Control txtSearch;
         private Control txtAmountPaid;
         private Label lblTotal;
@@ -26,8 +25,8 @@ namespace cafesophia
         private Control panelCheckout;
         private FlowLayoutPanel flowProducts;
         private Panel cartItemsPanel;
-        private Label lblSubTotal;
-        private Label lblTotalLarge;
+    //    private Label lblSubTotal;
+      //  private Label lblTotalLarge;
         private Label lblCartCount;
 
         private string _currentCategory = "All";
@@ -74,7 +73,7 @@ namespace cafesophia
             panelProducts = FindControlByNames(new[] { "panelProducts", "panel1" });
             panelCheckout = FindControlByNames(new[] { "panelCheckout", "panel2" });
             txtAmountPaid = FindControlByNames(new[] { "txtAmountPaid", "txtamountpaid" });
-            lblTotal = FindControlByNames(new[] { "lblTotal", "lbltotal" }) as Label;
+           lblTotal = FindControlByNames(new[] { "lblTotal", "lbltotal" }) as Label;
             // map the designer's label4 (change placeholder) to lblChange
             lblChange = FindControlByNames(new[] { "lblChange", "label4", "lblchange" }) as Label;
             btnPay = FindControlByNames(new[] { "btnPay", "btnbayad" });
@@ -115,43 +114,67 @@ namespace cafesophia
                     LoadProducts(_currentCategory, _currentSearch);
                 };
             }
-
             if (panelCheckout == null) throw new InvalidOperationException("panelCheckout not found in designer.");
 
             cartItemsPanel = new Panel { AutoScroll = true, Location = new Point(5, 44), Size = new Size(panelCheckout.Width - 10, Math.Max(200, panelCheckout.Height - 380)), Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right, BackColor = Color.White };
             panelCheckout.Controls.Add(cartItemsPanel);
-
             // remove discount UI - no discount input
+          //  lblSubTotal = new Label { Text = "Sub Total: ₱0.00", Location = new Point(8, panelCheckout.Height - 280), AutoSize = true };
+        //    panelCheckout.Controls.Add(lblSubTotal);
 
-            lblSubTotal = new Label { Text = "Sub Total: ₱0.00", Location = new Point(8, panelCheckout.Height - 280), AutoSize = true };
-            panelCheckout.Controls.Add(lblSubTotal);
-
-            lblTotalLarge = new Label { Text = "TOTAL: ₱0.00", Location = new Point(8, panelCheckout.Height - 210), AutoSize = true, Font = new Font("Segoe UI", 14, FontStyle.Bold) };
-            panelCheckout.Controls.Add(lblTotalLarge);
+         //   lblTotalLarge = new Label { Text = "TOTAL: ₱0.00", Location = new Point(8, panelCheckout.Height - 210), AutoSize = true, Font = new Font("Segoe UI", 14, FontStyle.Bold) };
+         //   panelCheckout.Controls.Add(lblTotalLarge);
 
             lblCartCount = new Label { Text = "Cart: 0", Location = new Point(panelCheckout.Width - 80, 12), AutoSize = true, Anchor = AnchorStyles.Top | AnchorStyles.Right };
             panelCheckout.Controls.Add(lblCartCount);
 
+            // wire existing Order Type controls from designer (do not declare new controls)
+            var cmbOrderType = FindControlByNames(new[] { "cmbOrderType", "cmbordertype", "cmbOrdertype", "cmb_ordertype" }) as ComboBox;
+            var lblOrderTypeLabel = FindControlByNames(new[] { "lblOrderType", "lblorderype", "lblOrdertype", "lbl_order_type" }) as Label;
+
+            // configure if designer placed the combobox/label but didn't set items/default
+            if (cmbOrderType != null)
+            {
+                if (cmbOrderType.Items.Count == 0)
+                {
+                    cmbOrderType.Items.Add("Dine In");
+                    cmbOrderType.Items.Add("Take Out");
+                }
+                // default
+                try { if (cmbOrderType.SelectedIndex < 0) cmbOrderType.SelectedIndex = 0; } catch { }
+            }
+            if (lblOrderTypeLabel != null)
+            {
+                if (string.IsNullOrWhiteSpace(lblOrderTypeLabel.Text)) lblOrderTypeLabel.Text = "Order Type:";
+            }
+
             panelCheckout.SizeChanged += (s, e) =>
             {
                 cartItemsPanel.Size = new Size(panelCheckout.Width - 10, Math.Max(200, panelCheckout.Height - 380));
-                lblSubTotal.Location = new Point(8, panelCheckout.Height - 280);
-                lblTotalLarge.Location = new Point(8, panelCheckout.Height - 210);
+           //     lblSubTotal.Location = new Point(8, panelCheckout.Height - 280);
+         //       lblTotalLarge.Location = new Point(8, panelCheckout.Height - 210);
                 lblCartCount.Location = new Point(panelCheckout.Width - 80, 12);
+
+                // Position existing Order Type controls near the top of the payment area.
+                if (lblOrderTypeLabel != null && cmbOrderType != null)
+                {
+                    var orderTypeX = 8;
+                    var orderTypeY = Math.Max(8, panelCheckout.Height - 170);
+                    lblOrderTypeLabel.Location = new Point(orderTypeX, orderTypeY);
+                    cmbOrderType.Location = new Point(orderTypeX + 80, orderTypeY - 3);
+                }
+                else if (cmbOrderType != null)
+                {
+                    var orderTypeX = 8;
+                    var orderTypeY = Math.Max(8, panelCheckout.Height - 170);
+                    cmbOrderType.Location = new Point(orderTypeX + 80, orderTypeY - 3);
+                }
             };
 
-            // NOTE: btnPay is wired in the designer to btnbayad_Click -> PayOrder().
-            // Avoid attaching an extra runtime handler here to prevent double execution.
-            // If designer does not wire the button in some builds, uncomment the guarded attach below.
-            // if (btnPay != null) { if (!(btnPay is Button b && b.Tag?.ToString() == "payAttached")) { btnPay.Click += (s,e) => PayOrder(); if (btnPay is Button bx) bx.Tag = "payAttached"; } }
-
             if (btnCancelOrder != null) btnCancelOrder.Click += (s, e) => CancelOrder();
-          //  if (btnHoldOrder != null) btnHoldOrder.Click += (s, e) => HoldOrder();
 
-            // Attach amount paid handlers for live change + validation
             if (txtAmountPaid != null)
             {
-                // KeyPress to restrict typed chars
                 txtAmountPaid.KeyPress += AmountPaid_KeyPress;
                 // TextChanged to sanitize pasted text and recalc
                 txtAmountPaid.TextChanged += (s, e) =>
@@ -159,7 +182,6 @@ namespace cafesophia
                     SanitizeAmountPaidInput();
                     UpdateTotals();
                 };
-                // Optionally format on leave
                 txtAmountPaid.Leave += (s, e) =>
                 {
                     // normalize to 2 decimals if parseable
@@ -176,17 +198,81 @@ namespace cafesophia
         private void AddCategoryButtons()
         {
             if (panelProducts == null) return;
+
+            // If a category panel already exists, don't recreate it.
             var existing = panelProducts.Controls.OfType<FlowLayoutPanel>().FirstOrDefault(fl => fl.Name == "categoryPanel");
             if (existing != null) return;
 
-            var categoryPanel = new FlowLayoutPanel { Name = "categoryPanel", Dock = DockStyle.Bottom, Height = 60, FlowDirection = FlowDirection.LeftToRight, Padding = new Padding(8), BackColor = Color.Transparent };
-            panelProducts.Controls.Add(categoryPanel);
-            categoryPanel.BringToFront();
+            // Create a horizontal category bar docked to the top.
+            var categoryPanel = new FlowLayoutPanel
+            {
+                Name = "categoryPanel",
+                Dock = DockStyle.Top,
+                Height = 60,
+                FlowDirection = FlowDirection.LeftToRight,
+                Padding = new Padding(8),
+                BackColor = Color.Transparent,
+                WrapContents = false,   // keep buttons on one row
+                AutoScroll = true,
+                Margin = new Padding(0)
+            };
 
+            panelProducts.SuspendLayout();
+            try
+            {
+                // Ensure there is a FlowLayoutPanel that will contain products and fill remaining space.
+                if (flowProducts == null)
+                {
+                    flowProducts = panelProducts.Controls.OfType<FlowLayoutPanel>().FirstOrDefault(fl => fl.Name != "categoryPanel");
+                }
+
+                if (flowProducts == null)
+                {
+                    flowProducts = new FlowLayoutPanel
+                    {
+                        Name = "productFlow",
+                        Dock = DockStyle.Fill,
+                        AutoScroll = true,
+                        WrapContents = true,
+                        Padding = new Padding(8),
+                        Margin = new Padding(0),
+                        FlowDirection = FlowDirection.LeftToRight
+                    };
+                    panelProducts.Controls.Add(flowProducts);
+                }
+                else
+                {
+                    // enforce expected docking/spacing of an existing flow panel
+                    flowProducts.Dock = DockStyle.Fill;
+                    flowProducts.Margin = new Padding(0);
+                    flowProducts.Padding = new Padding(8);
+                }
+                panelProducts.Controls.Add(categoryPanel);
+                panelProducts.Controls.SetChildIndex(categoryPanel, 0);
+                // Ensure flowProducts sits after the category panel in z-order.
+                panelProducts.Controls.SetChildIndex(flowProducts, 1);
+
+                flowProducts.Padding = new Padding(flowProducts.Padding.Left, categoryPanel.Height + 8, flowProducts.Padding.Right, flowProducts.Padding.Bottom);
+            }
+            finally
+            {
+                panelProducts.ResumeLayout();
+                panelProducts.PerformLayout();
+            }
+
+            // Create buttons and keep same styling & behaviour
             string[] cats = new[] { "All", "Coffee", "Food", "Milktea" };
             foreach (var c in cats)
             {
-                var btn = new Button { Text = c, AutoSize = false, Size = new Size(90, 40), Tag = c, BackColor = c == "All" ? Color.LightBlue : SystemColors.Control };
+                var btn = new Button
+                {
+                    Text = c,
+                    AutoSize = false,
+                    Size = new Size(90, 40),
+                    Tag = c,
+                    BackColor = c == "All" ? Color.LightBlue : SystemColors.Control,
+                    Margin = new Padding(4) // consistent spacing
+                };
                 btn.Click += (s, e) =>
                 {
                     foreach (Button b in categoryPanel.Controls.OfType<Button>()) b.BackColor = SystemColors.Control;
@@ -281,10 +367,8 @@ namespace cafesophia
             {
                 DBConnection.Close();
             }
-
             flowProducts.ResumeLayout();
         }
-
         private void UpdateCartDisplay()
         {
             cartItemsPanel.Controls.Clear();
@@ -303,7 +387,6 @@ namespace cafesophia
             lblCartCount.Text = "Cart: " + _cartManager.Count;
             SetPayEnabled(_cartManager.Count > 0);
         }
-
         private Panel CreateCartRow(CartItem item, int width, int height)
         {
             var row = new Panel { Size = new Size(width - 28, height), Anchor = AnchorStyles.Left | AnchorStyles.Right | AnchorStyles.Top, BackColor = Color.WhiteSmoke };
@@ -353,15 +436,12 @@ namespace cafesophia
         private void UpdateTotals()
         {
             decimal subtotal = _cartManager.CalculateSubtotal();
-
             decimal total = subtotal;
 
-            lblSubTotal.Text = "Sub Total: " + FormatCurrency(subtotal);
-            lblTotalLarge.Text = "TOTAL: " + FormatCurrency(total);
+          //  lblSubTotal.Text = "Sub Total: " + FormatCurrency(subtotal);
+        //    lblTotalLarge.Text = "TOTAL: " + FormatCurrency(total);
 
             if (lblTotal != null) lblTotal.Text = FormatCurrency(total);
-
-            // update change display if amount paid is present
             if (txtAmountPaid != null && lblChange != null)
             {
                 var paidText = GetText(txtAmountPaid).Trim();
@@ -403,7 +483,6 @@ namespace cafesophia
                     MessageBox.Show("Cart is empty. Please add items before paying.", "Empty Cart", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
                 if (txtAmountPaid == null)
                 {
                     MessageBox.Show("Amount Paid control not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -415,16 +494,13 @@ namespace cafesophia
                     MessageBox.Show("Invalid Amount Paid. Please enter a numeric value.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
                 decimal subtotal = _cartManager.CalculateSubtotal();
                 decimal total = subtotal;
-
                 if (amountPaid < total)
                 {
                     MessageBox.Show("Amount paid must be equal to or greater than the total.", "Insufficient Amount", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-
                 decimal change = amountPaid - total;
                 DBConnection.Open();
                 using (var transaction = DBConnection.connection.BeginTransaction())
@@ -447,7 +523,6 @@ namespace cafesophia
                             cmd.Parameters.Clear();
                             saleId = Convert.ToInt64(cmd.ExecuteScalar());
                         }
-
                         foreach (var item in _cartManager.Items)
                         {
                             using (var cmd = DBConnection.connection.CreateCommand())
@@ -476,12 +551,9 @@ namespace cafesophia
                                 cmd.ExecuteNonQuery();
                             }
                         }
-
                         transaction.Commit();
-
                         MessageBox.Show($"Payment successful! Change: {FormatCurrency(change)}", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // show change in UI
                         if (lblChange != null)
                         {
                             lblChange.Text = FormatCurrency(change);
@@ -498,7 +570,14 @@ namespace cafesophia
                                 Change = change,
                                 Date = DateTime.Now
                             };
+                            var cmbOrderTypeCtrl = FindControlByNames(new[] { "cmbOrderType", "cmbordertype", "cmbOrdertype", "cmb_ordertype" });
+                            if (cmbOrderTypeCtrl != null)
+                            {
+                                receipt.OrderType = GetText(cmbOrderTypeCtrl);
+                            }
+
                             var printer = new ReceiptPrinter(receipt);
+                            // interactive / default printing behavior (no automatic filename)
                             printer.Print();
                             _cartManager.Clear();
                             LoadProducts(_currentCategory, _currentSearch);
@@ -539,6 +618,13 @@ namespace cafesophia
                 if (txtSearch != null) txtSearch.Text = "";
                 if (txtAmountPaid != null) txtAmountPaid.Text = "";
                 if (lblChange != null) lblChange.Text = FormatCurrency(0m);
+
+                // reset designer Order Type combobox if present (do not declare new control)
+                var cmbOrderType = FindControlByNames(new[] { "cmbOrderType", "cmbordertype", "cmbOrdertype", "cmb_ordertype" }) as ComboBox;
+                if (cmbOrderType != null)
+                {
+                    try { cmbOrderType.SelectedIndex = 0; } catch { cmbOrderType.Text = "Dine In"; }
+                }
                 SetFocusToSearch();
             }
         }
@@ -546,12 +632,6 @@ namespace cafesophia
         {
             PayOrder();
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-            // label4 mapped to lblChange (no action required)
-        }
-        // ---------- New helpers for numeric validation & schema safety ----------
         private void AmountPaid_KeyPress(object sender, KeyPressEventArgs e)
         {
             // Allow control characters (backspace), digits, and a single decimal point
@@ -567,7 +647,6 @@ namespace cafesophia
                     if (!tb.Text.Contains(".")) return;
                 }
             }
-            // otherwise block
             e.Handled = true;
         }
         private void SanitizeAmountPaidInput()
@@ -582,7 +661,6 @@ namespace cafesophia
 
             // prefer '.' as decimal separator for invariant parsing: replace commas with dots
             cleaned = cleaned.Replace(',', '.');
-
             // collapse multiple dots to a single dot (keep first)
             int firstDot = cleaned.IndexOf('.');
             if (firstDot >= 0)
@@ -591,7 +669,6 @@ namespace cafesophia
                 var after = cleaned.Substring(firstDot + 1).Replace(".", "");
                 cleaned = before + after;
             }
-
             if (cleaned != original)
             {
                 var sel = Math.Max(0, tb.SelectionStart - (original.Length - cleaned.Length));
@@ -599,9 +676,6 @@ namespace cafesophia
                 tb.SelectionStart = Math.Min(tb.Text.Length, sel);
             }
         }
-
-        // At startup ensure the amount_paid and change_amount columns exist; if not, add them.
-        // This is a safe runtime migration fallback to prevent "Unknown column ... in 'field list'".
         private void EnsureSalesColumns()
         {
             try
@@ -619,6 +693,11 @@ namespace cafesophia
                                         WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tbl_sales' AND COLUMN_NAME = 'change_amount';";
                     var changeAmountCount = Convert.ToInt32(cmd.ExecuteScalar());
 
+                    // Check order_type column
+                    cmd.CommandText = @"SELECT COUNT(*) FROM INFORMATION_SCHEMA.COLUMNS
+                                        WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'tbl_sales' AND COLUMN_NAME = 'order_type';";
+                    var orderTypeCount = Convert.ToInt32(cmd.ExecuteScalar());
+
                     if (amountPaidCount == 0)
                     {
                         using (var alter = DBConnection.connection.CreateCommand())
@@ -635,6 +714,15 @@ namespace cafesophia
                             alter.ExecuteNonQuery();
                         }
                     }
+                    if (orderTypeCount == 0)
+                    {
+                        using (var alter = DBConnection.connection.CreateCommand())
+                        {
+                            // short varchar with default Dine In
+                            alter.CommandText = "ALTER TABLE tbl_sales ADD COLUMN order_type VARCHAR(32) NOT NULL DEFAULT 'Dine In' AFTER change_amount;";
+                            alter.ExecuteNonQuery();
+                        }
+                    }
                 }
             }
             catch
@@ -646,5 +734,6 @@ namespace cafesophia
                 DBConnection.Close();
             }
         }
+
     }
 }

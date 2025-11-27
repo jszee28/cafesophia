@@ -253,9 +253,9 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(730, 20);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(174, 45);
+            this.label5.Size = new System.Drawing.Size(211, 45);
             this.label5.TabIndex = 33;
-            this.label5.Text = "Add Stock";
+            this.label5.Text = "Add Product";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnclear
