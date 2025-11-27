@@ -41,22 +41,79 @@ namespace cafesophia
         }
 
         private void btnsale_Click(object sender, EventArgs e)
-        {
+        { // click Event Active color
+            btnaddnew.BackColor = Color.FromArgb(240, 245, 248);
+            btnaddnew.ForeColor = Color.Black;
+
+            btnreport.BackColor = Color.FromArgb(107, 62, 38);
+            btnreport.ForeColor = Color.White;
+
+            btnhistory.BackColor = Color.FromArgb(107, 62, 38);
+            btnhistory.ForeColor = Color.White;
+
+            btnmanagement.BackColor = Color.FromArgb(107, 62, 38);
+            btnmanagement.ForeColor = Color.White;
+
+            btnprocess.BackColor = Color.FromArgb(107, 62, 38);
+            btnprocess.ForeColor = Color.White;
             LoadForm(new sale());
         }
 
         private void btnreport_Click(object sender, EventArgs e)
         {
+            btnaddnew.BackColor = Color.FromArgb(107, 62, 38);
+            btnaddnew.ForeColor = Color.White;
+            // click Event Active color
+            btnreport.BackColor = Color.FromArgb(240, 245, 248);
+            btnreport.ForeColor = Color.Black;
+            
+            btnhistory.BackColor = Color.FromArgb(107, 62, 38);
+            btnhistory.ForeColor = Color.White;
+
+            btnmanagement.BackColor = Color.FromArgb(107, 62, 38);
+            btnmanagement.ForeColor = Color.White;
+
+            btnprocess.BackColor = Color.FromArgb(107, 62, 38);
+            btnprocess.ForeColor = Color.White;
             LoadForm (new report());
         }
 
         private void btnhistory_Click(object sender, EventArgs e)
         {
+            btnaddnew.BackColor = Color.FromArgb(107, 62, 38);
+            btnaddnew.ForeColor = Color.White;
+
+            btnreport.BackColor = Color.FromArgb(107, 62, 38);
+            btnreport.ForeColor = Color.White;
+            // click Event Active color
+            btnhistory.BackColor = Color.FromArgb(240, 245, 248);
+            btnhistory.ForeColor = Color.Black;
+
+            btnmanagement.BackColor = Color.FromArgb(107, 62, 38);
+            btnmanagement.ForeColor = Color.White;
+
+            btnprocess.BackColor = Color.FromArgb(107, 62, 38);
+            btnprocess.ForeColor = Color.White;
             LoadForm(new history());
         }
 
         private void btnmanagement_Click(object sender, EventArgs e)
         {
+            btnaddnew.BackColor = Color.FromArgb(107, 62, 38);
+            btnaddnew.ForeColor = Color.White;
+
+            btnreport.BackColor = Color.FromArgb(107, 62, 38);
+            btnreport.ForeColor = Color.White;
+
+            btnhistory.BackColor = Color.FromArgb(107, 62, 38);
+            btnhistory.ForeColor = Color.White;
+            // click Event Active color
+            btnmanagement.BackColor = Color.FromArgb(240, 245, 248);
+            btnmanagement.ForeColor = Color.Black;
+
+            btnprocess.BackColor = Color.FromArgb(107, 62, 38);
+            btnprocess.ForeColor = Color.White;
+
             LoadForm (new management());
         }
 
@@ -67,7 +124,21 @@ namespace cafesophia
 
         private void btnprocess_Click(object sender, EventArgs e)
         {
-            btnprocess.BackColor = Color.FromArgb(245, 238, 232);
+            //Default back
+            btnaddnew.BackColor = Color.FromArgb(107, 62, 38);
+            btnaddnew.ForeColor = Color.White;
+
+            btnreport.BackColor = Color.FromArgb(107, 62, 38);
+            btnreport.ForeColor = Color.White;
+
+            btnhistory.BackColor = Color.FromArgb(107, 62, 38);
+            btnhistory.ForeColor = Color.White;
+
+            btnmanagement.BackColor = Color.FromArgb(107, 62, 38);
+            btnmanagement.ForeColor = Color.White;
+
+            // click Event Active color
+            btnprocess.BackColor = Color.FromArgb(240, 245, 248);
             btnprocess.ForeColor = Color.Black;
 
             LoadForm(new processsale());
