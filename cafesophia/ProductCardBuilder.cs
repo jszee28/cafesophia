@@ -40,7 +40,9 @@ namespace cafesophia
                 AutoEllipsis = true
             };
             card.Controls.Add(lblName);
-            
+            lblName.MouseEnter += (s, e) => card.BackColor = Color.FromArgb(245, 238, 232);
+            lblName.MouseLeave += (s, e) => card.BackColor = Color.White;
+
             var lblPrice = new Label
             {
                 Text = string.Format("₱{0:N2}", price),
@@ -51,6 +53,8 @@ namespace cafesophia
                 ForeColor = Color.Green
             };
             card.Controls.Add(lblPrice);
+            lblPrice.MouseEnter += (s, e) => card.BackColor = Color.FromArgb(245, 238, 232);
+            lblPrice.MouseLeave += (s, e) => card.BackColor = Color.White;
 
             void FireCallback() => onClick?.Invoke(itemId, name, price, stock);
 
