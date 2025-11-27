@@ -204,10 +204,10 @@
             this.btncancel.FillColor = System.Drawing.Color.Transparent;
             this.btncancel.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.btncancel.ForeColor = System.Drawing.Color.White;
-            this.btncancel.Location = new System.Drawing.Point(783, 956);
+            this.btncancel.Location = new System.Drawing.Point(772, 956);
             this.btncancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btncancel.Name = "btncancel";
-            this.btncancel.Size = new System.Drawing.Size(272, 69);
+            this.btncancel.Size = new System.Drawing.Size(309, 79);
             this.btncancel.TabIndex = 3;
             this.btncancel.Text = "Cancel Order";
             // 
@@ -220,10 +220,10 @@
             this.btnbayad.FillColor = System.Drawing.Color.Lime;
             this.btnbayad.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbayad.ForeColor = System.Drawing.Color.White;
-            this.btnbayad.Location = new System.Drawing.Point(1114, 956);
+            this.btnbayad.Location = new System.Drawing.Point(1087, 956);
             this.btnbayad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnbayad.Name = "btnbayad";
-            this.btnbayad.Size = new System.Drawing.Size(272, 69);
+            this.btnbayad.Size = new System.Drawing.Size(309, 79);
             this.btnbayad.TabIndex = 5;
             this.btnbayad.Text = "Process Order";
             this.btnbayad.Click += new System.EventHandler(this.btnbayad_Click);
