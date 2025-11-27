@@ -136,7 +136,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(29, 254);
+            this.label4.Location = new System.Drawing.Point(34, 320);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(193, 27);
             this.label4.TabIndex = 43;
@@ -156,7 +156,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(26, 328);
+            this.label2.Location = new System.Drawing.Point(32, 377);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 27);
             this.label2.TabIndex = 41;
@@ -190,7 +190,7 @@
             "Bottle",
             "Cup",
             "Pcs"});
-            this.cmbUnit.Location = new System.Drawing.Point(230, 328);
+            this.cmbUnit.Location = new System.Drawing.Point(230, 371);
             this.cmbUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUnit.Name = "cmbUnit";
             this.cmbUnit.Size = new System.Drawing.Size(237, 36);
@@ -209,7 +209,7 @@
             this.txtLowStock.Font = new System.Drawing.Font("Century", 12F);
             this.txtLowStock.ForeColor = System.Drawing.Color.Black;
             this.txtLowStock.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLowStock.Location = new System.Drawing.Point(230, 242);
+            this.txtLowStock.Location = new System.Drawing.Point(230, 312);
             this.txtLowStock.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtLowStock.Name = "txtLowStock";
             this.txtLowStock.PlaceholderText = "";
@@ -273,7 +273,7 @@
             this.btnclear.FillColor = System.Drawing.Color.Red;
             this.btnclear.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnclear.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnclear.Location = new System.Drawing.Point(1172, 437);
+            this.btnclear.Location = new System.Drawing.Point(1056, 437);
             this.btnclear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnclear.Name = "btnclear";
             this.btnclear.Size = new System.Drawing.Size(315, 61);
@@ -291,7 +291,7 @@
             this.btnAdd.FillColor = System.Drawing.Color.Lime;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
             this.btnAdd.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnAdd.Location = new System.Drawing.Point(851, 437);
+            this.btnAdd.Location = new System.Drawing.Point(735, 437);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(315, 61);
@@ -335,7 +335,7 @@
             this.txtquantity.Font = new System.Drawing.Font("Century", 12F);
             this.txtquantity.ForeColor = System.Drawing.Color.Black;
             this.txtquantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtquantity.Location = new System.Drawing.Point(230, 381);
+            this.txtquantity.Location = new System.Drawing.Point(230, 430);
             this.txtquantity.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.PlaceholderText = "";
@@ -347,11 +347,12 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(103, 393);
+            this.label9.Location = new System.Drawing.Point(109, 437);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(113, 27);
             this.label9.TabIndex = 56;
             this.label9.Text = "Quantity:";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // addnew
             // 
