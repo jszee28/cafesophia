@@ -97,9 +97,9 @@
             this.lblOrderTypelabel.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblOrderTypelabel.Location = new System.Drawing.Point(12, 690);
             this.lblOrderTypelabel.Name = "lblOrderTypelabel";
-            this.lblOrderTypelabel.Size = new System.Drawing.Size(154, 27);
+            this.lblOrderTypelabel.Size = new System.Drawing.Size(160, 27);
             this.lblOrderTypelabel.TabIndex = 12;
-            this.lblOrderTypelabel.Text = "Service Type";
+            this.lblOrderTypelabel.Text = "Service Type:";
             // 
             // cmbordertype
             // 
@@ -125,7 +125,7 @@
             // 
             this.lblchange.AutoSize = true;
             this.lblchange.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblchange.Location = new System.Drawing.Point(409, 870);
+            this.lblchange.Location = new System.Drawing.Point(303, 870);
             this.lblchange.Name = "lblchange";
             this.lblchange.Size = new System.Drawing.Size(187, 44);
             this.lblchange.TabIndex = 10;
@@ -137,9 +137,9 @@
             this.label3.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(9, 870);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 44);
+            this.label3.Size = new System.Drawing.Size(174, 44);
             this.label3.TabIndex = 9;
-            this.label3.Text = "Change";
+            this.label3.Text = "Change:";
             // 
             // txtamountpaid
             // 
@@ -166,7 +166,7 @@
             // 
             this.lbltotal.AutoSize = true;
             this.lbltotal.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbltotal.Location = new System.Drawing.Point(493, 756);
+            this.lbltotal.Location = new System.Drawing.Point(318, 756);
             this.lbltotal.Name = "lbltotal";
             this.lbltotal.Size = new System.Drawing.Size(103, 37);
             this.lbltotal.TabIndex = 7;
@@ -175,12 +175,12 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(12, 766);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(10, 756);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 27);
+            this.label2.Size = new System.Drawing.Size(93, 37);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Total";
+            this.label2.Text = "Total:";
             // 
             // label1
             // 
