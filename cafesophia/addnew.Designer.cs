@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.txtCostPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtSellingPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -136,7 +137,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(34, 320);
+            this.label4.Location = new System.Drawing.Point(34, 338);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(193, 27);
             this.label4.TabIndex = 43;
@@ -156,7 +157,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(32, 377);
+            this.label2.Location = new System.Drawing.Point(32, 393);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(190, 27);
             this.label2.TabIndex = 41;
@@ -190,7 +191,7 @@
             "Bottle",
             "Cup",
             "Pcs"});
-            this.cmbUnit.Location = new System.Drawing.Point(246, 368);
+            this.cmbUnit.Location = new System.Drawing.Point(246, 384);
             this.cmbUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUnit.Name = "cmbUnit";
             this.cmbUnit.Size = new System.Drawing.Size(237, 36);
@@ -209,7 +210,7 @@
             this.txtLowStock.Font = new System.Drawing.Font("Century", 12F);
             this.txtLowStock.ForeColor = System.Drawing.Color.Black;
             this.txtLowStock.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLowStock.Location = new System.Drawing.Point(246, 306);
+            this.txtLowStock.Location = new System.Drawing.Point(246, 324);
             this.txtLowStock.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtLowStock.Name = "txtLowStock";
             this.txtLowStock.PlaceholderText = "";
@@ -309,6 +310,16 @@
             this.dgvInventory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
+            this.dgvInventory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 7.8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvInventory.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvInventory.RowHeadersVisible = false;
             this.dgvInventory.RowHeadersWidth = 62;
             this.dgvInventory.RowTemplate.Height = 28;
             this.dgvInventory.Size = new System.Drawing.Size(1476, 591);
@@ -335,7 +346,7 @@
             this.txtquantity.Font = new System.Drawing.Font("Century", 12F);
             this.txtquantity.ForeColor = System.Drawing.Color.Black;
             this.txtquantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtquantity.Location = new System.Drawing.Point(246, 425);
+            this.txtquantity.Location = new System.Drawing.Point(246, 437);
             this.txtquantity.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.PlaceholderText = "";
@@ -347,7 +358,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(109, 437);
+            this.label9.Location = new System.Drawing.Point(109, 449);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(113, 27);
             this.label9.TabIndex = 56;
