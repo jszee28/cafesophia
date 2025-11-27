@@ -68,7 +68,7 @@ namespace cafesophia
         private void btnprocess_Click(object sender, EventArgs e)
         {
             btnprocess.BackColor = Color.FromArgb(245, 238, 232);
-            btnprocess.ForeColor = Color.White;
+            btnprocess.ForeColor = Color.Black;
 
             LoadForm(new processsale());
 
