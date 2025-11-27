@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
@@ -79,7 +79,7 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.Linen;
             this.guna2Panel2.Controls.Add(this.lblTotalValue);
             this.guna2Panel2.Controls.Add(this.label4);
-            this.guna2Panel2.Location = new System.Drawing.Point(1042, 105);
+            this.guna2Panel2.Location = new System.Drawing.Point(914, 120);
             this.guna2Panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(412, 146);
@@ -89,7 +89,7 @@
             // 
             this.lblTotalValue.AutoSize = true;
             this.lblTotalValue.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalValue.Location = new System.Drawing.Point(26, 68);
+            this.lblTotalValue.Location = new System.Drawing.Point(49, 68);
             this.lblTotalValue.Name = "lblTotalValue";
             this.lblTotalValue.Size = new System.Drawing.Size(48, 55);
             this.lblTotalValue.TabIndex = 27;
@@ -111,7 +111,7 @@
             this.guna2Panel5.Controls.Add(this.lblTotalItems);
             this.guna2Panel5.Controls.Add(this.label1);
             this.guna2Panel5.ForeColor = System.Drawing.Color.White;
-            this.guna2Panel5.Location = new System.Drawing.Point(461, 105);
+            this.guna2Panel5.Location = new System.Drawing.Point(365, 120);
             this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(316, 146);
@@ -122,7 +122,7 @@
             this.lblTotalItems.AutoSize = true;
             this.lblTotalItems.Font = new System.Drawing.Font("Century Gothic", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTotalItems.ForeColor = System.Drawing.Color.Black;
-            this.lblTotalItems.Location = new System.Drawing.Point(137, 71);
+            this.lblTotalItems.Location = new System.Drawing.Point(128, 71);
             this.lblTotalItems.Name = "lblTotalItems";
             this.lblTotalItems.Size = new System.Drawing.Size(48, 55);
             this.lblTotalItems.TabIndex = 27;
@@ -158,6 +158,7 @@
             // 
             this.btnLoadSummary.AutoRoundedCorners = true;
             this.btnLoadSummary.BorderThickness = 2;
+            this.btnLoadSummary.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoadSummary.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLoadSummary.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLoadSummary.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -194,6 +195,7 @@
             // 
             this.btnlowstock.AutoRoundedCorners = true;
             this.btnlowstock.BorderThickness = 2;
+            this.btnlowstock.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnlowstock.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnlowstock.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnlowstock.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -211,21 +213,22 @@
             // 
             // chart1
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chart1.Legends.Add(legend5);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(111, 333);
             this.chart1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Chocolate;
-            series5.ChartArea = "ChartArea1";
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chart1.Series.Add(series5);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(1343, 506);
             this.chart1.TabIndex = 94;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // report
             // 
