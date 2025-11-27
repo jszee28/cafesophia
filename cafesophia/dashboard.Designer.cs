@@ -85,6 +85,7 @@
             // 
             // btnLogout
             // 
+            this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnLogout.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnLogout.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -107,6 +108,7 @@
             // 
             // btnhistory
             // 
+            this.btnhistory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnhistory.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnhistory.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnhistory.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -165,6 +167,7 @@
             // 
             // btnreport
             // 
+            this.btnreport.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnreport.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnreport.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnreport.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -186,6 +189,7 @@
             // 
             // btnmanagement
             // 
+            this.btnmanagement.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmanagement.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnmanagement.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnmanagement.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
