@@ -65,12 +65,12 @@
             this.txtsearchitem.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtsearchitem.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtsearchitem.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtsearchitem.Location = new System.Drawing.Point(4, 4);
+            this.txtsearchitem.Location = new System.Drawing.Point(17, 4);
             this.txtsearchitem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtsearchitem.Name = "txtsearchitem";
             this.txtsearchitem.PlaceholderText = "Search Item Here..";
             this.txtsearchitem.SelectedText = "";
-            this.txtsearchitem.Size = new System.Drawing.Size(291, 49);
+            this.txtsearchitem.Size = new System.Drawing.Size(278, 41);
             this.txtsearchitem.TabIndex = 0;
             this.txtsearchitem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -186,7 +186,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(302, 4);
+            this.label1.Location = new System.Drawing.Point(305, 11);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 34);
             this.label1.TabIndex = 5;

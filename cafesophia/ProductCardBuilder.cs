@@ -22,8 +22,8 @@ namespace cafesophia
                 Cursor = Cursors.Hand,
                 Tag = new { itemId, name, price, stock }
             };
-
-            card.MouseEnter += (s, e) => card.BackColor = Color.FromArgb(245, 245, 245);
+            // Check
+            card.MouseEnter += (s, e) => card.BackColor = Color.FromArgb(0,0,0);
             card.MouseLeave += (s, e) => card.BackColor = Color.White;
 
             var pb = CreatePictureBox(imagePath);
