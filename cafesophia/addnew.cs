@@ -645,5 +645,10 @@ namespace cafesophia
                 MessageBox.Show("Error handling grid action: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -65,12 +65,12 @@
             this.txtCostPrice.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCostPrice.ForeColor = System.Drawing.Color.Black;
             this.txtCostPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCostPrice.Location = new System.Drawing.Point(1152, 186);
-            this.txtCostPrice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtCostPrice.Location = new System.Drawing.Point(735, 153);
+            this.txtCostPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtCostPrice.Name = "txtCostPrice";
             this.txtCostPrice.PlaceholderText = "";
             this.txtCostPrice.SelectedText = "";
-            this.txtCostPrice.Size = new System.Drawing.Size(350, 67);
+            this.txtCostPrice.Size = new System.Drawing.Size(237, 36);
             this.txtCostPrice.TabIndex = 6;
             // 
             // txtSellingPrice
@@ -86,33 +86,34 @@
             this.txtSellingPrice.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSellingPrice.ForeColor = System.Drawing.Color.Black;
             this.txtSellingPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSellingPrice.Location = new System.Drawing.Point(1152, 107);
-            this.txtSellingPrice.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtSellingPrice.Location = new System.Drawing.Point(735, 95);
+            this.txtSellingPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtSellingPrice.Name = "txtSellingPrice";
             this.txtSellingPrice.PlaceholderText = "";
             this.txtSellingPrice.SelectedText = "";
-            this.txtSellingPrice.Size = new System.Drawing.Size(350, 67);
+            this.txtSellingPrice.Size = new System.Drawing.Size(237, 36);
             this.txtSellingPrice.TabIndex = 5;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(972, 127);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label7.Location = new System.Drawing.Point(573, 102);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 28);
+            this.label7.Size = new System.Drawing.Size(154, 27);
             this.label7.TabIndex = 45;
-            this.label7.Text = "Selling Price";
+            this.label7.Text = "Selling Price:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(38, 113);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(91, 102);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(135, 28);
+            this.label6.Size = new System.Drawing.Size(133, 27);
             this.label6.TabIndex = 44;
-            this.label6.Text = "Item Type";
+            this.label6.Text = "Item Type: ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // cmbItemType
             // 
@@ -125,50 +126,51 @@
             this.cmbItemType.Font = new System.Drawing.Font("Century", 12F);
             this.cmbItemType.ForeColor = System.Drawing.Color.Black;
             this.cmbItemType.ItemHeight = 30;
-            this.cmbItemType.Location = new System.Drawing.Point(259, 113);
+            this.cmbItemType.Location = new System.Drawing.Point(230, 93);
+            this.cmbItemType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbItemType.Name = "cmbItemType";
-            this.cmbItemType.Size = new System.Drawing.Size(218, 36);
+            this.cmbItemType.Size = new System.Drawing.Size(237, 36);
             this.cmbItemType.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 381);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(29, 254);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(206, 28);
+            this.label4.Size = new System.Drawing.Size(193, 27);
             this.label4.TabIndex = 43;
-            this.label4.Text = "Low Stock Alert";
+            this.label4.Text = "Low Stock Alert: ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(972, 214);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(573, 162);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 28);
+            this.label3.Size = new System.Drawing.Size(130, 27);
             this.label3.TabIndex = 42;
-            this.label3.Text = "Cost Price";
+            this.label3.Text = "Cost Price:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(38, 473);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(26, 328);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(210, 28);
+            this.label2.Size = new System.Drawing.Size(190, 27);
             this.label2.TabIndex = 41;
-            this.label2.Text = "Unit of Measure";
+            this.label2.Text = "Unit of Measure:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(38, 229);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(73, 176);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 28);
+            this.label1.Size = new System.Drawing.Size(149, 27);
             this.label1.TabIndex = 40;
-            this.label1.Text = "Item Name";
+            this.label1.Text = "Item Name: ";
             // 
             // cmbUnit
             // 
@@ -188,9 +190,10 @@
             "Bottle",
             "Cup",
             "Pcs"});
-            this.cmbUnit.Location = new System.Drawing.Point(259, 473);
+            this.cmbUnit.Location = new System.Drawing.Point(230, 328);
+            this.cmbUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUnit.Name = "cmbUnit";
-            this.cmbUnit.Size = new System.Drawing.Size(218, 36);
+            this.cmbUnit.Size = new System.Drawing.Size(237, 36);
             this.cmbUnit.TabIndex = 3;
             // 
             // txtLowStock
@@ -206,12 +209,12 @@
             this.txtLowStock.Font = new System.Drawing.Font("Century", 12F);
             this.txtLowStock.ForeColor = System.Drawing.Color.Black;
             this.txtLowStock.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLowStock.Location = new System.Drawing.Point(259, 354);
-            this.txtLowStock.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtLowStock.Location = new System.Drawing.Point(230, 242);
+            this.txtLowStock.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtLowStock.Name = "txtLowStock";
             this.txtLowStock.PlaceholderText = "";
             this.txtLowStock.SelectedText = "";
-            this.txtLowStock.Size = new System.Drawing.Size(233, 67);
+            this.txtLowStock.Size = new System.Drawing.Size(237, 41);
             this.txtLowStock.TabIndex = 2;
             // 
             // txtItemName
@@ -227,12 +230,12 @@
             this.txtItemName.Font = new System.Drawing.Font("Century", 12F);
             this.txtItemName.ForeColor = System.Drawing.Color.Black;
             this.txtItemName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtItemName.Location = new System.Drawing.Point(259, 190);
-            this.txtItemName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtItemName.Location = new System.Drawing.Point(230, 162);
+            this.txtItemName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.PlaceholderText = "";
             this.txtItemName.SelectedText = "";
-            this.txtItemName.Size = new System.Drawing.Size(429, 67);
+            this.txtItemName.Size = new System.Drawing.Size(237, 41);
             this.txtItemName.TabIndex = 1;
             // 
             // guna2Panel5
@@ -241,51 +244,57 @@
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(62)))), ((int)(((byte)(38)))));
             this.guna2Panel5.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guna2Panel5.Name = "guna2Panel5";
-            this.guna2Panel5.Size = new System.Drawing.Size(1755, 74);
+            this.guna2Panel5.Size = new System.Drawing.Size(1560, 59);
             this.guna2Panel5.TabIndex = 48;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(730, 20);
+            this.label5.Location = new System.Drawing.Point(639, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(211, 45);
+            this.label5.Size = new System.Drawing.Size(242, 44);
             this.label5.TabIndex = 33;
             this.label5.Text = "Add Product";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // btnclear
             // 
+            this.btnclear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnclear.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnclear.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnclear.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnclear.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnclear.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnclear.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnclear.ForeColor = System.Drawing.Color.Black;
-            this.btnclear.Location = new System.Drawing.Point(1426, 564);
+            this.btnclear.FillColor = System.Drawing.Color.Red;
+            this.btnclear.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnclear.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnclear.Location = new System.Drawing.Point(1172, 437);
+            this.btnclear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(247, 76);
+            this.btnclear.Size = new System.Drawing.Size(315, 61);
             this.btnclear.TabIndex = 8;
             this.btnclear.Text = "Clear";
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btnAdd
             // 
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAdd.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnAdd.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAdd.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAdd.Font = new System.Drawing.Font("Century", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(1019, 564);
+            this.btnAdd.FillColor = System.Drawing.Color.Lime;
+            this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.btnAdd.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btnAdd.Location = new System.Drawing.Point(851, 437);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(247, 76);
+            this.btnAdd.Size = new System.Drawing.Size(315, 61);
             this.btnAdd.TabIndex = 7;
             this.btnAdd.Text = "Add";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -296,20 +305,21 @@
             this.dgvInventory.AllowUserToDeleteRows = false;
             this.dgvInventory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventory.Location = new System.Drawing.Point(12, 646);
+            this.dgvInventory.Location = new System.Drawing.Point(11, 517);
+            this.dgvInventory.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvInventory.Name = "dgvInventory";
             this.dgvInventory.ReadOnly = true;
             this.dgvInventory.RowHeadersWidth = 62;
             this.dgvInventory.RowTemplate.Height = 28;
-            this.dgvInventory.Size = new System.Drawing.Size(1661, 739);
+            this.dgvInventory.Size = new System.Drawing.Size(1476, 591);
             this.dgvInventory.TabIndex = 53;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(694, 237);
+            this.label8.Location = new System.Drawing.Point(617, 190);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 20);
+            this.label8.Size = new System.Drawing.Size(0, 16);
             this.label8.TabIndex = 54;
             // 
             // txtquantity
@@ -325,32 +335,32 @@
             this.txtquantity.Font = new System.Drawing.Font("Century", 12F);
             this.txtquantity.ForeColor = System.Drawing.Color.Black;
             this.txtquantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtquantity.Location = new System.Drawing.Point(259, 549);
-            this.txtquantity.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txtquantity.Location = new System.Drawing.Point(230, 381);
+            this.txtquantity.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.PlaceholderText = "";
             this.txtquantity.SelectedText = "";
-            this.txtquantity.Size = new System.Drawing.Size(267, 67);
+            this.txtquantity.Size = new System.Drawing.Size(237, 39);
             this.txtquantity.TabIndex = 4;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(38, 573);
+            this.label9.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(103, 393);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(121, 28);
+            this.label9.Size = new System.Drawing.Size(113, 27);
             this.label9.TabIndex = 56;
-            this.label9.Text = "Quantity";
+            this.label9.Text = "Quantity:";
             // 
             // addnew
             // 
             this.AcceptButton = this.btnAdd;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(248)))), ((int)(((byte)(231)))));
             this.CancelButton = this.btnclear;
-            this.ClientSize = new System.Drawing.Size(1755, 1410);
+            this.ClientSize = new System.Drawing.Size(1560, 867);
             this.ControlBox = false;
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtquantity);
@@ -371,6 +381,7 @@
             this.Controls.Add(this.cmbUnit);
             this.Controls.Add(this.txtLowStock);
             this.Controls.Add(this.txtItemName);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "addnew";
             this.Load += new System.EventHandler(this.addnew_Load);
             this.guna2Panel5.ResumeLayout(false);
