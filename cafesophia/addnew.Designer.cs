@@ -98,7 +98,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(573, 102);
+            this.label7.Location = new System.Drawing.Point(549, 102);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(154, 27);
             this.label7.TabIndex = 45;
@@ -126,7 +126,7 @@
             this.cmbItemType.Font = new System.Drawing.Font("Century", 12F);
             this.cmbItemType.ForeColor = System.Drawing.Color.Black;
             this.cmbItemType.ItemHeight = 30;
-            this.cmbItemType.Location = new System.Drawing.Point(230, 93);
+            this.cmbItemType.Location = new System.Drawing.Point(246, 93);
             this.cmbItemType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbItemType.Name = "cmbItemType";
             this.cmbItemType.Size = new System.Drawing.Size(237, 36);
@@ -190,7 +190,7 @@
             "Bottle",
             "Cup",
             "Pcs"});
-            this.cmbUnit.Location = new System.Drawing.Point(230, 371);
+            this.cmbUnit.Location = new System.Drawing.Point(246, 368);
             this.cmbUnit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbUnit.Name = "cmbUnit";
             this.cmbUnit.Size = new System.Drawing.Size(237, 36);
@@ -209,7 +209,7 @@
             this.txtLowStock.Font = new System.Drawing.Font("Century", 12F);
             this.txtLowStock.ForeColor = System.Drawing.Color.Black;
             this.txtLowStock.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtLowStock.Location = new System.Drawing.Point(230, 312);
+            this.txtLowStock.Location = new System.Drawing.Point(246, 306);
             this.txtLowStock.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtLowStock.Name = "txtLowStock";
             this.txtLowStock.PlaceholderText = "";
@@ -230,7 +230,7 @@
             this.txtItemName.Font = new System.Drawing.Font("Century", 12F);
             this.txtItemName.ForeColor = System.Drawing.Color.Black;
             this.txtItemName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtItemName.Location = new System.Drawing.Point(230, 162);
+            this.txtItemName.Location = new System.Drawing.Point(246, 162);
             this.txtItemName.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtItemName.Name = "txtItemName";
             this.txtItemName.PlaceholderText = "";
@@ -335,7 +335,7 @@
             this.txtquantity.Font = new System.Drawing.Font("Century", 12F);
             this.txtquantity.ForeColor = System.Drawing.Color.Black;
             this.txtquantity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtquantity.Location = new System.Drawing.Point(230, 430);
+            this.txtquantity.Location = new System.Drawing.Point(246, 425);
             this.txtquantity.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.txtquantity.Name = "txtquantity";
             this.txtquantity.PlaceholderText = "";
