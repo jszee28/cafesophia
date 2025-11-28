@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using MySql.Data.MySqlClient;
 
 namespace cafesophia
@@ -16,9 +17,13 @@ namespace cafesophia
         public report()
         {
             InitializeComponent();
+
+            // ensure chart is configured before we populate values
+            InitializeChart();
+
             LoadInventorySummary();
             LoadStatistics();
-            LoadSalesSummary(); // populate sales panels
+            LoadSalesSummary(); // populate sales panels + update chart
         }
         private void btnLoadLowStock_Click(object sender, EventArgs e)
         {
@@ -172,10 +177,13 @@ namespace cafesophia
                 decimal monthly = GetMonthlySales();
                 decimal yearly = GetYearlySales();
 
-                lbldailysale.Text = $"₱{daily:N2}";
-                lblweeklysale.Text = $"₱{weekly:N2}";
-                lblmonthlysale.Text = $"₱{monthly:N2}";
-                lblyearlysale.Text = $"₱{yearly:N2}";
+            //    lbldailysale.Text = $"₱{daily:N2}";
+           //     lblweeklysale.Text = $"₱{weekly:N2}";
+            //    lblmonthlysale.Text = $"₱{monthly:N2}";
+           //     lblyearlysale.Text = $"₱{yearly:N2}";
+
+                // update chart to reflect these values
+                UpdateSalesChart();
             }
             catch (Exception ex)
             {
@@ -183,10 +191,85 @@ namespace cafesophia
             }
         }
 
+        // Call once at form initialization to configure the chart area / series
+        private void InitializeChart()
+        {
+            if (chart1 == null) return;
+
+            // Ensure a ChartArea exists
+            if (chart1.ChartAreas.Count == 0)
+                chart1.ChartAreas.Add(new ChartArea("DefaultArea"));
+
+            var area = chart1.ChartAreas[0];
+
+            // Basic chart appearance
+            area.AxisX.MajorGrid.Enabled = false;
+            area.AxisY.MajorGrid.Enabled = true;
+            area.AxisX.Interval = 1;
+            area.AxisY.LabelStyle.Format = "N2";
+
+            // Remove placeholder series and create the series we will use
+            chart1.Series.Clear();
+            var series = new Series("Series1")
+            {
+                ChartType = SeriesChartType.Column,
+                IsValueShownAsLabel = true,
+                XValueType = ChartValueType.String,
+                YValueType = ChartValueType.Double
+            };
+            chart1.Series.Add(series);
+
+            // Optional: tidy legend / palette
+            chart1.Legends.Clear();
+            chart1.Palette = ChartColorPalette.SeaGreen;
+        }
+
+        // Updates the chart with the current sales summary values
+        public void UpdateSalesChart()
+        {
+            if (chart1 == null) return;
+
+            // Query current sales values (reuse existing helpers)
+            decimal daily = GetDailySales();
+            decimal weekly = GetWeeklySales();
+            decimal monthly = GetMonthlySales();
+            decimal yearly = GetYearlySales();
+
+            var s = chart1.Series["Series1"];
+            if (s == null)
+            {
+                // If Series1 is missing, create it quickly
+                s = new Series("Series1") { ChartType = SeriesChartType.Column, IsValueShownAsLabel = true };
+                chart1.Series.Add(s);
+            }
+
+            s.Points.Clear();
+
+            // Add four bars with X labels matching requirements
+            s.Points.AddXY("Daily", (double)daily);
+            s.Points.AddXY("Weekly", (double)weekly);
+            s.Points.AddXY("Monthly", (double)monthly);
+            s.Points.AddXY("Yearly", (double)yearly);
+
+            // Force axis recalculation and format value labels
+            chart1.ChartAreas[0].RecalculateAxesScale();
+
+            // Optional: set Y axis minimum to 0 so bars always start at baseline
+            var area = chart1.ChartAreas[0];
+            area.AxisY.Minimum = 0;
+
+            // Update form labels (keeps existing UI consistent)
+   //         lbldailysale.Text = $"₱{daily:N2}";
+   //         lblweeklysale.Text = $"₱{weekly:N2}";
+   //         lblmonthlysale.Text = $"₱{monthly:N2}";
+   //         lblyearlysale.Text = $"₱{yearly:N2}";
+        }
 
         private void btnlowstock_Click(object sender, EventArgs e)
         {
             LoadLowStockItems();
         }
+
+      
     }
 }

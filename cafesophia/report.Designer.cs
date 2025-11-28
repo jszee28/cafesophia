@@ -42,18 +42,6 @@
             this.dgvSummary = new System.Windows.Forms.DataGridView();
             this.btnLoadSummary = new Guna.UI2.WinForms.Guna2Button();
             this.btnLoadLowStock = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblweeklysale = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblmonthlysale = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblyearlysale = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.guna2Panel9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lbldailysale = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.btnlowstock = new Guna.UI2.WinForms.Guna2Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
@@ -61,10 +49,6 @@
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).BeginInit();
-            this.guna2Panel6.SuspendLayout();
-            this.guna2Panel7.SuspendLayout();
-            this.guna2Panel8.SuspendLayout();
-            this.guna2Panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -199,132 +183,6 @@
             this.btnLoadLowStock.Text = "Low Stock";
             this.btnLoadLowStock.Click += new System.EventHandler(this.btnLoadLowStock_Click);
             // 
-            // guna2Panel6
-            // 
-            this.guna2Panel6.BackColor = System.Drawing.Color.SandyBrown;
-            this.guna2Panel6.Controls.Add(this.lblweeklysale);
-            this.guna2Panel6.Controls.Add(this.label7);
-            this.guna2Panel6.Location = new System.Drawing.Point(130, 405);
-            this.guna2Panel6.Name = "guna2Panel6";
-            this.guna2Panel6.Size = new System.Drawing.Size(360, 184);
-            this.guna2Panel6.TabIndex = 89;
-            // 
-            // lblweeklysale
-            // 
-            this.lblweeklysale.AutoSize = true;
-            this.lblweeklysale.Font = new System.Drawing.Font("Century", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblweeklysale.ForeColor = System.Drawing.Color.Black;
-            this.lblweeklysale.Location = new System.Drawing.Point(18, 93);
-            this.lblweeklysale.Name = "lblweeklysale";
-            this.lblweeklysale.Size = new System.Drawing.Size(57, 62);
-            this.lblweeklysale.TabIndex = 27;
-            this.lblweeklysale.Text = "0";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(94, 20);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(226, 43);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Weekly Sale";
-            // 
-            // guna2Panel7
-            // 
-            this.guna2Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.guna2Panel7.Controls.Add(this.lblmonthlysale);
-            this.guna2Panel7.Controls.Add(this.label9);
-            this.guna2Panel7.Location = new System.Drawing.Point(664, 407);
-            this.guna2Panel7.Name = "guna2Panel7";
-            this.guna2Panel7.Size = new System.Drawing.Size(367, 180);
-            this.guna2Panel7.TabIndex = 90;
-            // 
-            // lblmonthlysale
-            // 
-            this.lblmonthlysale.AutoSize = true;
-            this.lblmonthlysale.Font = new System.Drawing.Font("Century", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblmonthlysale.Location = new System.Drawing.Point(18, 91);
-            this.lblmonthlysale.Name = "lblmonthlysale";
-            this.lblmonthlysale.Size = new System.Drawing.Size(57, 62);
-            this.lblmonthlysale.TabIndex = 27;
-            this.lblmonthlysale.Text = "0";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(57, 18);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(237, 43);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "Monthly Sale";
-            // 
-            // guna2Panel8
-            // 
-            this.guna2Panel8.BackColor = System.Drawing.Color.Linen;
-            this.guna2Panel8.Controls.Add(this.lblyearlysale);
-            this.guna2Panel8.Controls.Add(this.label11);
-            this.guna2Panel8.Location = new System.Drawing.Point(1177, 405);
-            this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(367, 182);
-            this.guna2Panel8.TabIndex = 91;
-            // 
-            // lblyearlysale
-            // 
-            this.lblyearlysale.AutoSize = true;
-            this.lblyearlysale.Font = new System.Drawing.Font("Century", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblyearlysale.Location = new System.Drawing.Point(32, 91);
-            this.lblyearlysale.Name = "lblyearlysale";
-            this.lblyearlysale.Size = new System.Drawing.Size(57, 62);
-            this.lblyearlysale.TabIndex = 27;
-            this.lblyearlysale.Text = "0";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(93, 17);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(208, 43);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "Yearly Sale";
-            // 
-            // guna2Panel9
-            // 
-            this.guna2Panel9.BackColor = System.Drawing.Color.SaddleBrown;
-            this.guna2Panel9.Controls.Add(this.lbldailysale);
-            this.guna2Panel9.Controls.Add(this.label13);
-            this.guna2Panel9.ForeColor = System.Drawing.Color.White;
-            this.guna2Panel9.Location = new System.Drawing.Point(1177, 169);
-            this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(355, 184);
-            this.guna2Panel9.TabIndex = 88;
-            // 
-            // lbldailysale
-            // 
-            this.lbldailysale.AutoSize = true;
-            this.lbldailysale.Font = new System.Drawing.Font("Century", 26F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldailysale.ForeColor = System.Drawing.Color.Black;
-            this.lbldailysale.Location = new System.Drawing.Point(41, 93);
-            this.lbldailysale.Name = "lbldailysale";
-            this.lbldailysale.Size = new System.Drawing.Size(57, 62);
-            this.lbldailysale.TabIndex = 27;
-            this.lbldailysale.Text = "0";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(63, 20);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(199, 42);
-            this.label13.TabIndex = 28;
-            this.label13.Text = "Daily Sale";
-            // 
             // btnlowstock
             // 
             this.btnlowstock.AutoRoundedCorners = true;
@@ -347,20 +205,20 @@
             this.chart1.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(130, 651);
+            this.chart1.Location = new System.Drawing.Point(125, 416);
             this.chart1.Name = "chart1";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(1414, 397);
+            this.chart1.Size = new System.Drawing.Size(1511, 632);
             this.chart1.TabIndex = 94;
             this.chart1.Text = "chart1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(575, 616);
+            this.label2.Location = new System.Drawing.Point(305, 384);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(51, 20);
             this.label2.TabIndex = 95;
@@ -377,12 +235,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.btnlowstock);
-            this.Controls.Add(this.guna2Panel6);
-            this.Controls.Add(this.guna2Panel7);
             this.Controls.Add(this.dgvSummary);
-            this.Controls.Add(this.guna2Panel8);
             this.Controls.Add(this.btnLoadSummary);
-            this.Controls.Add(this.guna2Panel9);
             this.Controls.Add(this.btnLoadLowStock);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel5);
@@ -395,14 +249,6 @@
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSummary)).EndInit();
-            this.guna2Panel6.ResumeLayout(false);
-            this.guna2Panel6.PerformLayout();
-            this.guna2Panel7.ResumeLayout(false);
-            this.guna2Panel7.PerformLayout();
-            this.guna2Panel8.ResumeLayout(false);
-            this.guna2Panel8.PerformLayout();
-            this.guna2Panel9.ResumeLayout(false);
-            this.guna2Panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -422,18 +268,6 @@
         private System.Windows.Forms.DataGridView dgvSummary;
         private Guna.UI2.WinForms.Guna2Button btnLoadSummary;
         private Guna.UI2.WinForms.Guna2Button btnLoadLowStock;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
-        private System.Windows.Forms.Label lblweeklysale;
-        private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
-        private System.Windows.Forms.Label lblmonthlysale;
-        private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
-        private System.Windows.Forms.Label lblyearlysale;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel9;
-        private System.Windows.Forms.Label lbldailysale;
-        private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Button btnlowstock;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.Label label2;

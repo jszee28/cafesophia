@@ -200,7 +200,6 @@
             this.btncancel.Size = new System.Drawing.Size(198, 86);
             this.btncancel.TabIndex = 3;
             this.btncancel.Text = "Cancel Order";
-      
             // 
             // btnbayad
             // 
@@ -231,6 +230,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "processsale";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = " ";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

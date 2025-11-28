@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.dgvHistory = new System.Windows.Forms.DataGridView();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.btnRefreshHistory = new Guna.UI2.WinForms.Guna2Button();
             this.lblHistoryStatus = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.btnfilter = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2ColorTransition1 = new Guna.UI2.WinForms.Guna2ColorTransition(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -139,6 +142,28 @@
             this.guna2DateTimePicker1.TabIndex = 88;
             this.guna2DateTimePicker1.Value = new System.DateTime(2025, 11, 27, 23, 52, 1, 114);
             // 
+            // btnfilter
+            // 
+            this.btnfilter.BackColor = System.Drawing.Color.Transparent;
+            this.btnfilter.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.btnfilter.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.btnfilter.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnfilter.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.btnfilter.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnfilter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.btnfilter.ItemHeight = 30;
+            this.btnfilter.Location = new System.Drawing.Point(746, 122);
+            this.btnfilter.Name = "btnfilter";
+            this.btnfilter.Size = new System.Drawing.Size(156, 36);
+            this.btnfilter.TabIndex = 89;
+            // 
+            // guna2ColorTransition1
+            // 
+            this.guna2ColorTransition1.ColorArray = new System.Drawing.Color[] {
+        System.Drawing.Color.Red,
+        System.Drawing.Color.Blue,
+        System.Drawing.Color.Orange};
+            // 
             // history
             // 
             this.AcceptButton = this.btnRefreshHistory;
@@ -147,6 +172,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(248)))), ((int)(((byte)(231)))));
             this.ClientSize = new System.Drawing.Size(1755, 1444);
             this.ControlBox = false;
+            this.Controls.Add(this.btnfilter);
             this.Controls.Add(this.guna2DateTimePicker1);
             this.Controls.Add(this.lblHistoryStatus);
             this.Controls.Add(this.btnRefreshHistory);
@@ -171,5 +197,7 @@
         private Guna.UI2.WinForms.Guna2Button btnRefreshHistory;
         private System.Windows.Forms.Label lblHistoryStatus;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2ComboBox btnfilter;
+        private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
     }
 }
